@@ -2,7 +2,7 @@ import numpy as np
 import scipy.sparse as sp
 
 def ConjugateGradientMethod(x0, A, b):
-    TOL = 1e-50
+    TOL = 2**(-52)
     n = b.size
     x0 = sp.csc_matrix(x0)
     b = np.transpose(sp.csc_matrix(b))
