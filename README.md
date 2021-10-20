@@ -1,2 +1,2 @@
 # Matematiske-Metoder-3
-Øvinger i Mattematiske metoder 3
+Øvinger i Matematiske metoder 3
