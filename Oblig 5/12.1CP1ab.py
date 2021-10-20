@@ -12,7 +12,8 @@ def PowerIterationMethod(A):
         #lamda = u.T @ A @ u
 
     u = x0 / np.linalg.norm(x0, 2)
-    return u * (1 / np.min(u)), lamda
+    return u * abs((1 / np.min(u))), lamda
+    #return u * (1 / np.min(u)), lamda
 
 
 A = np.matrix("10, -12, -6; 5, -5, -4; -1, 0, 3")
@@ -27,3 +28,4 @@ print()
 u, lamda = PowerIterationMethod(B)
 print(u)
 print(lamda)
+
